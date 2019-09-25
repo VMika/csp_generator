@@ -3,7 +3,7 @@ selenium==3.141.0
 tornado==6.0.3
 calmjs.types==1.0.0
 Flask==1.0.2
-Twisted==19.2.0
+Twisted==19.7.0
 tinycss2==1.0.2
 urllib3==1.24.3
 Scrapy==1.6.0

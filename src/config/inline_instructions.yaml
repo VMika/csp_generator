@@ -1,0 +1,10 @@
+# NewExpr
+WebSocket: connect-src
+EventSource: connect-src
+Worker: worker-src
+SharedWorker: worker-src
+
+# FunctionCall
+sendBeacon: connect-src
+open: connect-src
+register: worker-src

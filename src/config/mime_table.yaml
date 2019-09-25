@@ -1,0 +1,43 @@
+### Configuration file used for sorting directly received requests into directives
+
+# STYLE-SRC
+text/css: style-src
+
+# IMG-SRC
+image/gif: img-src
+image/png: img-src
+image/jpeg: img-src
+image/bmp: img-src
+image/webp: img-src
+image/svg+xml: img-src
+image/x-icon: img-src
+image/tiff: img-src
+
+# SCRIPT-SRC
+text/javascript: script-src
+application/javascript: script-src
+
+# CONNECT-SRC
+application/json: connect-src
+
+# FONT-SRC
+font: font-src
+font/woff: font-src
+font/woff2: font-src
+font/otf: font-src
+font/ttf: font-src
+
+
+# MEDIA-SRC
+audio/aac: media-src
+audio/midi: media-src
+audio/mpeg: media-src
+audio/webm: media-src
+audio/ogg: media-src
+audio/wav: media-src
+
+video/web: media-src
+video/ogg: media-src
+video/mpeg: media-src
+
+

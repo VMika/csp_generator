@@ -1,0 +1,26 @@
+### Configuration file used to sort link tags given their rel attribute
+
+stylesheet:
+  - href
+  - style-src
+icon:
+  - href
+  - img-src
+assets:
+  - href
+  - script-src
+preload:
+  - href
+  - prefetch-src
+prefetch:
+  - href
+  - prefetch-src
+preconnect:
+  - href
+  - prefetch-src
+dns-prefetch:
+  - href
+  - prefetch-src
+manifest:
+  - href
+  - manifest-src

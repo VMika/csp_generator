@@ -1,0 +1,46 @@
+form {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.left-container {
+    width: 50%;
+    float: left;
+    align: center;
+}
+label {
+    text-align: center
+}
+
+.right-container {
+    width: 50%;
+    float: right;
+}
+
+input[type=text] {
+    width: 65%;
+    text-align: center;
+}
+
+label {
+    text-align: left;
+}
+
+
+input[type=text] {
+    border-style: none none solid none;
+    margin-left: 1em;
+}
+
+.button {
+    margin-top: 4em;
+    background-color: #743e8e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

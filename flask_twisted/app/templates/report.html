@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Report of CSP Generator</title>
+
+    <script src="/static/scripts/main.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/static/css/report.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/common.css" type="text/css">
+</head>
+
+<body>
+
+{% include "navbar.html" %}
+
+<h1> CSP directives and sources</h1>
+<hr>
+<div id="csp-tab">
+
+</div>
+
+
+<div id="csp-options">
+    <form name="options" id="option-list">
+        <input type="radio" value="raw" name="simplification"/>
+        <label>No simplifications</label>
+
+        <input type="radio" value="directory-simplified" name="simplification"/>
+        <label>Directory simplification</label>
+
+        <input type="radio" value="self-simplified" name="simplification"/>
+        <label>Self simplification</label>
+
+        <input type="radio" value="fully-simplified" name="simplification"/>
+        <label>Both simplifications</label>
+
+        <p id="simplification"></p>
+
+    </form>
+
+    <button id="csp-copy">Copy CSP</button>
+</div>
+
+<h1>Report for generated CSP</h1>
+<div id="flags">
+</div>
+
+</body>
+</html>

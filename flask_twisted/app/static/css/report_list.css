@@ -1,0 +1,54 @@
+table {
+    align: center;
+    width: 70%;
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid black;
+}
+
+tbody:first-child {
+    padding-top: 0.5em;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+.button {
+    background-color: #743e8e;
+    border: none;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.colId {
+    width: 10%;
+}
+
+.colStart {
+    width: 40%;
+}
+
+.colDomain {
+    width: 40%;
+}
+
+.colReport {
+    width: 10%;
+}

@@ -1,0 +1,120 @@
+inline_script:
+  description:
+    Use of inline script
+  explanation:
+    Unsafe-inline for the script-src is required for inline scripts to work but may cause security issues. Malicious script could be injected and executed this way
+  reco:
+    Put the script content into its own file and include the file in the needed page
+
+inline_event:
+  description:
+    Use of inline event handler
+  explanation:
+    Unsafe-inline for the script-src directive is required for inline event to work and but cause security issues. With unsafe-inline activated, malicious script could be injected and executed
+  reco:
+    Identifies the tag that needs an event handler and use the addEventListener function in a separate JS file to safely add the event handler
+
+
+inline_javascript:
+  description :
+    Use of inline javascript protocol
+  explanation:
+    Unsafe-inline is required for javascript protocol to be used inline. Malicious script could injected and executed this way
+  reco:
+    Put the instruction into its own file and add an event listener to the tag that triggers script execution
+
+eval_script:
+  description:
+    Use of eval function in an inline script
+  explanation:
+    Unsafe-eval for script-src is required for this function to properly work. This allows dynamic code execution in the page and represents a critical security risk
+  reco:
+    Determine if eval is necessesary in this situation
+
+inline_style:
+  description:
+    Use of inline <style> tags
+  explanation:
+    Unsafe-inline for style-src directive is required for inline style tags to work. This may cause injection of scripts embedded in style components that could result in malicious code execution
+  reco:
+    Include needed style in a file and include the style file
+
+eval_style:
+  description:
+    Use of eval instruction in style tag
+  explanation:
+    Unsafe-eval is required for the script-src directive in order to evaluate desired content. This is considered and unsafe practice, malicious script evaluating arbitrary instructions could be injected and cause malfunctions, data theft or other problem
+  reco:
+    Don't add CSS rule dynamically inside <style> tags and don't dynamically parse CSS rule, blocks or group of selectors
+
+jsonp_endpoint:
+  description:
+    Authorized JSONP endpoint in directive
+  explanation:
+    Inclusion of a JSONP endpoint in a directive source list allows for reflected injection by querying the endpoint with javascript body resulting in reflected javascript code
+  reco:
+    Don't use know JSONP endpoint
+
+permissive_include:
+  description:
+    Use of wildcard or directory include in directive source
+  explanation:
+    Use of wildcard in directive source might result in inclusion of undesired content if malicious script/file is uploaded into authorized directory
+  reco:
+    Whitelist content used or check if upload is no possible in allowed directory
+
+unused_directive_not_none:
+  description:
+    One or several unsused directives are not set to None
+  explanation:
+    If an unused directive is not set to None, content ruled bu this directive depends on the fallback directive which might cause security issues
+  reco:
+    Set unused directive to None or properly set fallbakc directive
+
+possible_mixed_content:
+  description:
+    Explicit use of HTTP protocol in a directive
+  explanation:
+    One of the directive is allowed to use HTTP protocol to retrieve data. This could lead to modification of expected content to malicious content
+  reco:
+    Remove possibility to use HTTP if possible of perform integrity check
+
+no_frame_rule:
+  description:
+    No X-Frame-Options enbabled
+  explanation:
+    Missing frame rule allow framing of the resource from any anywhere wich could be used in a malicious way
+  reco:
+    Adapt the X-Frame-Options header according to the need of being framed in another location
+
+permissive_frame_rule:
+  description:
+    Frame restricting mechanism (X-Frame-Options header or frame-ancestors CSP directive) is permissive
+  explanation:
+    Whitelisting framing origin discloses hosts allowed to frame the resource and may lead to undesired framing
+  reco:
+    Restrict host allowed to frame the resource
+
+no_upgrade_insecure_request:
+  description:
+    No upgrade-insecure-request header or block-all-mixed-content directive
+  explanation:
+    Lack of upgrade-insecure-request could lead to data being exchanged via http which can result into modification of expected content into a malicious one
+  reco:
+    Put either 'upgrade-insecure-request' or 'block-all-mixed-content' into the CSP
+
+missing_obj_src:
+  description:
+    Object-src is missing in the resource CSP
+  explanation:
+    Missing object-src directive allows object injection (via <embed> or <object> tag) that can result into injection of malicious script
+  reco:
+    Set object-src to None
+
+missing_frame_ancestors:
+  description:
+    Frame-ancestors directive is missing in the resource CSP
+  explanation:
+    Missing frame-ancesorts directive allows framing of the url from anywhere which could be used in a malicious way
+  reco:
+    Adapt the directive accord to the need of being framed

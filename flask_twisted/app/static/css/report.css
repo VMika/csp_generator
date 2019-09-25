@@ -1,0 +1,171 @@
+html {
+    font-family: Helvetica;
+}
+
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  margin: 1px;
+}
+
+#flags {
+    margin: 1.5em auto;
+    width: 65%;
+}
+
+.csp_header {
+    align: center;
+    margin: 0 auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-bottom: 5px;
+}
+
+span {
+    width:17%;
+    clear:left;
+    float:left;
+    text-align:left;
+    display: inline-block;
+}
+
+.right-content {
+    display: inline-block;
+    margin: auto;
+    width: 78%;
+}
+
+.content-paragraph:nth-child(even) {
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100%;
+}
+
+.content-paragraph:nth-child(odd) {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.content-paragraph {
+    width: 100%;
+    padding: 4px;
+    margin: 0;
+}
+
+
+#csp-tab {
+    align: center;
+    width: 100%;
+    margin: 1.5em auto;
+}
+
+
+table {
+    /* Chages the overrall stile of tab*/
+  border-collapse: collapse;
+  margin: auto;
+  width: 65%;
+  position: relative;
+}
+
+
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+td:nth-child(odd) {
+    text-align: center;
+}
+
+th {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+th:nth-child(odd) {
+    width: 6%;
+}
+
+th:nth-child(even) {
+    width: 20%;
+}
+
+tr:nth-child(even) {background-color: #f6f6f6;}
+
+#csp-options > form > input {
+    border: solid red 1px;
+    margin: auto;
+}
+
+#csp-options {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    overflow: hidden;
+}
+
+label {
+    margin-right: 2em;
+    margin-left: 0.4em;
+    display: inline-block;
+}
+
+
+#csp-copy {
+    display: inline-block;
+    margin: 2em auto;
+}
+
+h1 {
+    text-align: center;
+    color: #743e8e;
+}
+
+hr {
+    width: 65%;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+h4 > hr {
+    width: 100%;
+}
+
+#simplification {
+    color: red;
+    width: 60%;
+    margin: 1em auto 1em auto;
+}
+
+button {
+    background-color: #743e8e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

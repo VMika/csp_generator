@@ -1,0 +1,31 @@
+.nav-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+}
+
+
+.nav-container >li {
+  float: left;
+}
+
+.nav-container > li a {
+  display: block;
+  color: #743e8e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-container > li a:hover {
+  background-color: #743e8e;
+  color: white;
+}
+
+.nav-container > li {
+    display: inline;
+}

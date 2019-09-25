@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Report list</title>
+    <link rel="stylesheet" href="/static/css/report_list.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/common.css" type="text/css">
+</head>
+<body>
+
+    {% include navbar.html %}
+
+    <h1>List of reports</h1>
+
+    <table>
+    <tr>
+        <th class="colId">ID</th>
+        <th class="colStart">Start URL</th>
+        <th class="colDomain">Allowed domain</th>
+        <th class="colReport">Report link</th>
+    </tr>
+
+    {% for report in report_list %}
+    <tr>
+        {% for i in range(len(report) - 1) %}
+            <td class={{ escape(tr_class[i]) }}>{{ escape(str(report[i])) }}</td>
+        {% end %}
+        <td class="colReport"><a class="button" href={{ '/report/' + escape(str(report[0])) }} >View report</td>
+    </tr>
+    {% end %}
+
+    </table>
+
+</body>
+</html>

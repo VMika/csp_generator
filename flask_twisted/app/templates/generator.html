@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/generator.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/common.css" type="text/css">
+</head>
+
+
+<body>
+
+{% include "navbar.html" %}
+
+    <h1>CSP Generator Home Page</h1>
+
+    <form action="/crawl_url" method="POST">
+        <div class="left-container">
+            <label>Start url</label><br>
+            <input type="text" class="left" name="start_url" required>
+        </div>
+        <div class="right-container">
+            <label>Allowed domain</label><br>
+            <input type="text" name="allowed_domain" class="right" required>
+        </div>
+        <br>
+        <input class="button" type="submit" value="Generate CSP !"><br>
+    </form>
+</body>
+</html>

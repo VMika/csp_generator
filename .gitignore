@@ -1,0 +1,11 @@
+.idea
+geckodriver.log
+venv
+src/classes/__pycache__
+src/classes/sorter/test_sorter.py
+server.log
+test.py
+bmp.log
+csp.sql
+sandbox.py
+__pycache__

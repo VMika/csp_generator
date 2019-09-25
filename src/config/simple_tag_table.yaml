@@ -1,0 +1,58 @@
+### Configuration file used for sorting tags into directives
+
+### SCRIPT-SRC
+script:
+  - src
+  - script-src
+
+### IMG-SRC
+img:
+  - src
+  - img-src
+
+### MEDIA-SRC
+video:
+  - src
+  - media-src
+
+track:
+  - src
+  - media-src
+
+source:
+  - src
+  - media-src
+
+audio:
+  - src
+  - media-src
+
+### OBEJCT-SRC
+object:
+  - data
+  - object-src
+
+embed:
+  - src
+  - object-src
+
+applet:
+  - code
+  - object-src
+
+### FONT-SRC
+# Font are mainly inline, no tags are associated to them
+
+### CHILD-SRC
+frame:
+  - src
+  - child-src
+
+iframe:
+  - src
+  - child-src
+
+### FORM-ACTION
+form:
+  - action
+  - form-action

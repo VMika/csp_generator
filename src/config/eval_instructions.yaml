@@ -1,0 +1,11 @@
+# NewExpr or FunctionCall
+Function: script-src
+
+# FunctionCall
+setTimeout: script-src
+setInterval: script-src
+insertRule: style-src
+eval: script-src
+
+# Assign
+cssText: style-src

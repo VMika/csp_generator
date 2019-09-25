@@ -1,0 +1,29 @@
+### Configuration for generating an empty CSP
+- default-src
+# Deprecated, use frame-src and worker-src
+- child-src
+- connect-src
+- default-src
+- font-src
+# Deprecated, use child-src
+#- frame-src
+- img-src
+- manifest-src
+- media-src
+- object-src
+- prefetch-src
+- script-src
+- style-src
+# Possibly deprecated and taken care of in connect-src
+#- webrtc-src
+- worker-src
+#- base-uri
+# /!\ Not deprecated but might be useless if object-src is anything else than 'none'
+#- plugin-type
+- sandbox
+# Experimental and not supported by browsers
+#- disown-opener
+- form-action
+- frame-ancestors
+# Experimental and not supported by browsers
+#- navigate-to

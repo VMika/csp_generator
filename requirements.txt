@@ -1,4 +1,4 @@
-lxml==4.3.3
+lxml==4.6.3
 selenium==3.141.0
 tornado==6.0.3
 calmjs.types==1.0.0

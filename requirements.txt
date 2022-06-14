@@ -11,4 +11,4 @@ requests==2.21.0
 browsermob_proxy==0.8.0
 beautifulsoup4==4.8.0
 calmjs==3.4.1
-PyYAML==5.1.2
+PyYAML==5.4

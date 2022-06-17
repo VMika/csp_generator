@@ -6,7 +6,7 @@ Flask==1.0.2
 Twisted==22.4.0
 tinycss2==1.0.2
 urllib3==1.24.3
-Scrapy==1.6.0
+Scrapy==2.6.1
 requests==2.21.0
 browsermob_proxy==0.8.0
 beautifulsoup4==4.8.0
